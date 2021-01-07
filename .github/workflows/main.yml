@@ -21,7 +21,3 @@ jobs:
                 run: |
                     sudo pip install pipenv
                     make install_requirements_dev
-
-            -   name: lint
-                run:
-                    make lint
