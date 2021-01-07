@@ -17,6 +17,7 @@ jobs:
 
             -   name: install pipenv package manager
                 run: |
+                    python -m pip install --upgrade pip
                     sudo pip install pipenv
                     make install_requirements_dev
 
