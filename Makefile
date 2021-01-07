@@ -40,11 +40,11 @@ update: ## update the project dependencies based on setup.py declaration
 
 .PHONY: install_requirements_dev
 install_requirements_dev: ## install pip requirements for development
-	pipenv install --dev
+	pipenv install -e . --dev
 
 .PHONY: install_requirements
 install_requirements: ## install pip requirements based on requirements.txt
-	pipenv install
+	pipenv install -e .
 
 .PHONY: lint
 lint: ## run pylint
